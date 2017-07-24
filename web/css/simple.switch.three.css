@@ -1,0 +1,88 @@
+﻿
+* {
+    box-sizing: border-box !important;
+}
+
+.Switch, .Switch * {
+    -webkit-transition-property: all;
+    -moz-transition-property: all;
+    -o-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 0.2s;
+    -moz-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    -webkit-transition-delay: 0s;
+    -moz-transition-delay: 0s;
+    -o-transition-delay: 0s;
+    transition-delay: 0s;
+}
+/* FlatCircular */
+.Switch_FlatCircular {
+    position: relative;
+    left: 220px;
+    top: -35px;
+    width: 75px;
+    height: 25px;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: #f5a5a6;
+    border-radius: 20px;
+}
+
+.Switch_FlatCircular .SwitchLine:before {
+    position: absolute;
+    content: "公历";
+    color: #fff;
+    left: 39px;
+    top: -13px;
+}
+
+.Switch_FlatCircular .SwitchLine:after {
+    position: absolute;
+    content: "农历";
+    color: #fff;
+    left: 7px;
+    top: -13px;
+}
+
+.Switch_FlatCircular .SwitchButton {
+    position: absolute;
+    width: 38px;
+    height: 25px;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    background-color: #fff;
+    border-radius: 95px;
+    border: 1px solid #f5a5a6;
+}
+
+.Switch_FlatCircular.On {
+    background-color: #a7cce9;
+}
+
+.Switch_FlatCircular.On .SwitchLine {
+}
+
+.Switch_FlatCircular.On .SwitchButton {
+    border: 1px solid #a7cce9;
+    left: 37px;
+}
+
+.Switch_FlatCircular.On .SwitchButton:after, .Switch_FlatCircular.On .SwitchButton:before {
+    background-color: #a7cce9;
+}
+
+.Switch_FlatCircular.Disabled {
+    opacity: 0.3;
+}
+
+.Switch_FlatCircular.Disabled .SwitchButton {
+    /*opacity:0.5;*/
+}
+
+.Switch_FlatCircular.On.Disabled .SwitchLine {
+    /*opacity:0.5;*/
+}

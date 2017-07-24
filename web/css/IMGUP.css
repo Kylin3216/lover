@@ -1,0 +1,312 @@
+﻿/*相册*/
+.bg{
+    background: url("/image/albumbottom.png") no-repeat bottom;
+    width: 100%;
+    height: 660px;
+    margin-top: -20px;
+    cursor: url("/image/leaf.ico"),auto;
+}
+.fence{
+    width: 100%;
+    height: 660px;
+    background: url("/image/fence.png ") repeat-x bottom;
+}
+.tree{
+    background: url("/image/tree.png") no-repeat 600px 0;
+    height: 660px;
+    width: 100%;
+}
+.rope-paper{
+    background: url("/image/ropepaper.png") no-repeat 0 0;
+    height: 660px;
+    width: 100%;
+}
+.rope-paper .right-photo{
+    width: 600px;
+    height: 397px;
+    position: fixed;
+    left: 700px;
+    top: 150px;
+}
+.rope-paper .img-border{
+    background: url("/image/albumbox.png") no-repeat;
+    width: 600px;
+    height: 397px;
+    position: relative;
+    z-index: 2;
+}
+.rope-paper .change-img1{
+    transform: rotate(-16deg);
+    width: 273px;
+    height: 215px;
+    background: none;
+    border: none;
+    position: fixed;
+    top: 235px;
+    left: 760px;
+    z-index: 3;
+    padding: 0;
+}
+.rope-paper .change-img1:hover,.rope-paper .change-img2:hover{
+    background: rgba(172, 172, 172, 0.64);
+    transition: background 1s;
+}
+.rope-paper .left-img{
+    transform: rotate(-16deg);
+    width: 273px;
+    height: 215px;
+    position: relative;
+    top: -310px;
+    left: 60px;
+}
+.rope-paper .change-img2{
+    transform: rotate(1deg);
+    width: 197px;
+    height: 153px;
+    background: none;
+    border: none;
+    position: fixed;
+    top: 250px;
+    left: 1075px;
+    z-index: 3;
+    padding: 0;
+}
+.rope-paper .right-img{
+    width: 197px;
+    height: 153px;
+    transform: rotate(1deg);
+    position: relative;
+    top: -330px;
+    left: 100px;
+}
+.choose-image{
+    background: rgba(60, 40, 32, 0.69);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    padding: 70px 30px;
+}
+.bg .paper{
+    width: 570px;
+    height: 370px;
+    padding-left: 20px;
+    padding-top: 100px;
+    position: absolute;
+    left: 110px;
+    top: 250px;
+    transform: rotate(-2deg);
+    background: url("/image/kiss.png") no-repeat 310px 100px;
+}
+.look-album{
+    background: url("/image/albumbutton.png") no-repeat;
+    width: 272px;
+    height: 132px;
+    border: none;
+    padding-left: 50px;
+    font-size: 28px;
+    color: #05b08b;
+    font-family: "Adobe Hebrew";
+    text-shadow: 0 0 10px rgb(75, 128, 95);
+}
+.look-album:hover{
+    box-shadow:0 0 15px #8d8d8d;
+    transition: box-shadow 0.5s;
+}
+.my-album{
+    margin: 0;
+    padding: 20px;
+}
+.my-album li{
+    display: block;
+    width: 200px;
+    margin: 15px;
+    float: left;
+}
+.my-album li .thumbnail img{
+    width: 150px;
+    height: 150px;
+}
+
+/*相册*/
+.album{
+    background: rgba(60, 40, 32, 0.69);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.album .album-border{
+    background: url("/image/album-border.png") no-repeat;
+    width: 765px;
+    height: 658px;
+    margin: 50px auto;
+    padding-top: 60px;
+}
+.album table{
+    border:0;
+    text-align:center;
+    margin: 100px 25px 0;
+}
+.album .album-information{
+    padding-left: 60px;
+}
+.album .thumb_img {
+    cursor:pointer;
+    display:block;
+    margin-bottom:10px;
+    width:80px;
+    height:50px;
+}
+.album .thumb_img:hover{
+    border: blue 2px solid;
+}
+.album #main_img {
+    cursor:pointer;
+    display:block;
+    width:515px;
+    height:320px;
+    border-radius: 10px;
+}
+#gotop,#gobottom{
+    cursor:pointer;
+    display:block;
+    width:100px;
+    height:14px;
+}
+#goleft,#goright{
+    cursor:pointer;
+    display:block;
+    width: 14px;
+    height: 80px;
+    margin: 10px;
+}
+#showArea {
+    height:275px;
+    margin:10px;
+    overflow:hidden
+}
+
+/*选择图片框样式*/
+#div_imgfile {
+    width: 130px;
+    height: 130px;
+    text-align: center;
+    line-height: 130px;
+    font-family: 微软雅黑;
+    font-size: 16px;
+    box-sizing: border-box;
+    border: 2px solid #808080;
+    cursor: pointer;
+    background: url("/image/add-image.png") no-repeat;
+    background-size: cover;
+}
+    /*选择图片框鼠标移入移出效果*/
+    #div_imgfile:hover {
+        background-color: #d1cfcf;
+    }
+
+.imgfile {
+    display: none;
+}
+
+/*这里是图片预览容器样式*/
+#div_imglook {
+    margin-top: 20px;
+    background-color: #FFEFD5;
+}
+
+/*单个图片预览模块样式*/
+.lookimg {
+    width: 130px;
+    height: 130px;
+    box-sizing: border-box;
+    border: 1px solid #808080;
+    float: left;
+    margin-right: 10px;
+    position: relative;
+}
+
+.lookimg img {
+    width: 100%;
+    height: 100%;
+}
+
+/*删除按钮样式*/
+.lookimg_delBtn {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    background-color: #808080;
+    opacity: 0.8;
+    color: white;
+    font-size: 16px;
+    font-family: 微软雅黑;
+    display: none;
+    cursor: pointer;
+}
+
+    /*删除按钮移入移出效果*/
+    .lookimg_delBtn:hover {
+        opacity: 1;
+    }
+
+/*上传进度条样式*/
+.lookimg_progress {
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    background-color: #e0e0e0;
+    box-sizing: border-box;
+    border: 1px solid black;
+    display: none;
+    text-align: center;
+    line-height: 20px;
+    font-size: 14px;
+}
+
+    .lookimg_progress div {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 0;
+        background-color: #e9cc2e;
+    }
+
+
+/*确定上传按钮样式*/
+#btn_ImgUpStart ,.exit-chooseImage{
+    width: 130px;
+    height: 40px;
+    margin-top: 30px;
+}
+
+
+.avatar-btns button {
+    height: 35px;
+}
+
+.off-album{
+    position: fixed;
+    left: 900px;
+    top: 560px;
+    background: rgba(154, 164, 182, 0.58);
+    color: #ff7978;
+    border: none;
+    border-radius: 90px;
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+}
+.off-album:hover{
+    text-shadow: 0 0 5px rgba(255, 123, 130, 0.85);
+}
+
